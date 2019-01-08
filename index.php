@@ -59,8 +59,8 @@ $sql = "SELECT * FROM tasks";
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_assoc($result)) { ?>
-	<td data-id = "<?php echo $row['id']; ?>"> 
-		<?php echo $row['name'] . " is task number " . $row['id']; ?>
+	<td data-id = "<?php echo $row['id'] ; ?>"> 
+		<?php echo $row['name'] . " is task number " . $row['id'] ; ?>
 		<button class="deleteBtn btn-danger" > Delete </button>
 	</td>
 
